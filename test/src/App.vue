@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/animelist">AnimeList</router-link>
+      <h1>Novin's Anime Webpage</h1>
+      <div class="navlink">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/animelist">AnimeList</router-link>
+      </div>
     </div>
     <router-view />
   </div>
@@ -18,14 +21,32 @@
 }
 
 #nav {
-  padding: 30px;
+  background-color: lime;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  & > * {
+    margin:10px;
+  }
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  h1 {
+    color:black;
+    margin-right:auto;
+    margin-left:200px;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
+  .navlink{
+    margin:auto;
+
+    a {
+      font-weight: bold;
+      color: white;
+
+      &.router-link-exact-active {
+        color: dimgray;
+      }
     }
   }
 }
