@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar class="navbar" variant="dark" type="light">
-        <b-link class="m-2 text-white" to ="/">
+        <b-link class="m-2 text-white">
           Home
         </b-link>
         <b-link class="m-2 text-white" to ="/animelist">
